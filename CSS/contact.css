@@ -1,0 +1,335 @@
+/**********************************************
+SECTION 1 - CONTACT HERO SECTION
+**********************************************/
+   
+.contact-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.95)), url("../IMG/Contact/nasa-blues.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.contact-hero-text{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact-hero-text h1{
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.contact-hero-text p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-scroll-down{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    transition-delay: all 0s;
+    opacity: 1;
+}
+
+.contact-scroll-down h5{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+   
+.contact-hero:hover .contact-scroll-down{
+    opacity: 1;
+    transition-delay: 2s; 
+}
+   
+/**********************************************
+END OF SECTION-1 OF CONTACT HERO SECTION
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 2 - INFO CARDS
+**********************************************/
+
+.info-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 7rem;
+    margin-bottom: 10rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.section-2-contact:hover .info-cards{
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+
+.info-card-1,
+.info-card-2,
+.info-card-3{
+    background: linear-gradient(rgba(0,0,0,0.73), rgba(0,0,0,0.73)), url(../IMG/Contact/Info-card-RER.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 460px;
+    transition: all 0.2s;
+}
+
+.info-card-1:hover,
+.info-card-2:hover,
+.info-card-3:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255) 40%), url(../IMG/Contact/Info-card-RER.jpg);
+    background-size: cover;
+    background-position: top;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.info-card-svg{
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.info-card-svg svg{
+    width: 4.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.info-card-1:hover .info-card-svg svg,
+.info-card-2:hover .info-card-svg svg,
+.info-card-3:hover .info-card-svg svg{
+    color: black;
+}
+
+.info-card-text{
+    text-align: center;
+}
+
+.info-card-text h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-card-text p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/**********************************************
+END OF SECTION-2 INFO CARDS
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 2 - CONTACT CARD
+**********************************************/
+
+.section-2-contact{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 18.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.just-contact-heading h5,
+.just-contact-heading h2{
+   text-align: center;
+   transition: all 0.5s;
+   opacity: 1;
+}
+
+.contact-p{
+   width: 80%;
+   margin: auto;
+   margin-bottom: 10rem;
+   font-size: 1.8rem;
+   line-height: 1.5;
+   text-align: center;
+   transition: all 0.5s;
+   opacity: 1;
+}
+
+.section-2-contact:hover .just-contact-heading h5,
+.section-2-contact:hover .just-contact-heading h2,
+.section-2-contact:hover .contact-p{
+    opacity: 1;
+}
+   
+.contact-imgs img{
+    width: 25%;
+}
+
+.contact-card{
+    background-color: rgba(255, 255, 255, 0.751);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    border-radius: 0px 10px 10px 0px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.section-2-contact:hover .contact-card{
+    opacity: 1;
+    transition-delay: 1.4s;
+}
+
+.contact-img-section{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../IMG/stars-2.jpg");
+    background-size: cover;
+    animation: floating 60s linear infinite alternate;
+    border-radius: 0;
+}
+
+.contact-img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    font-size: 3.5rem;
+}
+
+.contact-imgs{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact-sat-trans{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: rotate-slowly 5s linear infinite alternate;
+}
+
+.contact-form{
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 50%), url(../IMG/Contact/contact-form-RRR.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 0px 10px 10px 0px;
+    padding: 2.5rem;
+}
+
+.contact-form-text h3{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.contact-form-text p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 2.5rem;
+}
+   
+.form-selec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+}
+
+.form-selec h4{
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.input-selec{
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 100%;
+    border: 3px solid #dadada;
+    border-radius: 5px;
+}
+
+.submit-form{
+    width: 100px;
+    padding: 0.7rem 0.8rem;
+    font-size: 1.8rem;
+    color: black;
+    background-color: transparent;
+    border: 3px solid #d0d0d0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.submit-form:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}
+
+
+/**********************************************
+END OF SECTION-2 OF CONTACT CARD
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 2 - CONTACT CARD
+**********************************************/
+
+.section-3-contact{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.contact-map{
+    border-top: 5px solid white;
+}
+
+iframe{
+    width: 100%;
+    filter: brightness(90%);
+}
+
+/**********************************************
+END OF SECTION-2 OF CONTACT CARD
+**********************************************/

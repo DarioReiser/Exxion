@@ -1,0 +1,417 @@
+/**********************************************
+SECTION 1 - GALLERY HERO SECTION
+**********************************************/
+   
+.hero-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.95)), url("../IMG/Gallery/pexels-spacex-RR.jpg");
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.hero-gallery-text{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-gallery-text h1{
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.hero-gallery-text p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.gallery-scroll-down{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    transition-delay: all 0s;
+    opacity: 1;
+}
+
+.gallery-scroll-down h5{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+   
+.hero-gallery:hover .gallery-scroll-down{
+    opacity: 1;
+    transition-delay: 2s; 
+}
+   
+/**********************************************
+END OF SECTION-1 OF GALLERY HERO SECTION
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 2 - VOYAGER GALLERY
+**********************************************/
+   
+.section-2-gallery{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+   
+/**********************************************
+END OF SECTION-2 VOYAGER GALLERY
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 3 - MCRN-1 GALLERY
+**********************************************/
+   
+.section-3-gallery{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 8.5rem;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+   
+/**********************************************
+END OF SECTION-3 MCRN-1 GALLERY
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION-3 AND SECTION 4 GALLERY
+**********************************************/
+.voyager-images{
+    width: 95%;
+    margin: auto;
+ }
+ 
+ .voyager-images h5{
+    text-align: center;
+    opacity: 1;
+    transition: all 0.5s;
+ }
+ 
+ .voyager-images h2{
+   text-align: center;
+    margin-bottom: 10rem;
+    opacity: 1;
+    transition: all 0.5s;
+ }
+
+ .section-2-gallery:hover .voyager-images h5,
+ .section-2-gallery:hover .voyager-images h2{
+   opacity: 1;
+ }
+
+ .section-3-gallery:hover .voyager-images h5,
+ .section-3-gallery:hover .voyager-images h2{
+   opacity: 1;
+ }
+ 
+ .gallery-imgs-1,
+ .gallery-imgs-2{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 20rem);
+    gap: 2rem;
+    overflow: hidden;
+ }
+
+ .gallery-imgs-1{
+   opacity: 1;
+   transition: all 0.5s;
+   transition-delay: 0.5s;
+ }
+
+ .gallery-imgs-2{
+   opacity: 1;
+   transition: all 0.5s;
+   transition-delay: 0.5s;
+ }
+ 
+ .gallery-imgs-1 img,
+ .gallery-imgs-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+ }
+ 
+ .gall-img-1,
+ .gall-img-2,
+ .gall-img-3,
+ .gall-img-4,
+ .gall-img-5,
+ .gall-img-6,
+ .gall-img-7,
+ .gall-img-8,
+ .gall-img-9,
+ .gall-img-10,
+ .gall-img-11{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid white;
+    position: relative;
+    transition: all 0.5s;
+ }
+
+
+
+ .gall-img-1::before,
+ .gall-img-2::before,
+ .gall-img-3::before,
+ .gall-img-4::before,
+ .gall-img-5::before,
+ .gall-img-6::before,
+ .gall-img-7::before,
+ .gall-img-8::before,
+ .gall-img-9::before,
+ .gall-img-10::before,
+ .gall-img-11::before{
+   content: "Hover over me";
+   position: absolute;
+   width: 100%;
+   height: 5.5%;
+   bottom: 10px;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   animation: scaling-gallery 3s linear infinite;
+   transition: all 0.5s;
+   font-size: 1.5rem;
+   font-weight: 600;
+   z-index: 1;
+   opacity: 1;
+ }
+
+.gall-img-1:hover::before,
+.gall-img-2:hover::before,
+.gall-img-3:hover::before,
+.gall-img-4:hover::before,
+.gall-img-5:hover::before,
+.gall-img-6:hover::before,
+.gall-img-7:hover::before,
+.gall-img-8:hover::before,
+.gall-img-9:hover::before,
+.gall-img-10:hover::before,
+.gall-img-11:hover::before{
+   opacity: 0;
+}
+
+
+ @keyframes scaling-gallery {
+   0% {transform: scaleX(1);}
+
+   50% {transform: scaleX(1.08);}
+
+   100% {transform: scaleX(1);}
+}
+ 
+ 
+ .gall-img-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+ }
+ 
+ .gall-img-2{
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }
+ 
+ .gall-img-3{
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+ }
+ 
+ .gall-img-4{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 6;
+ }
+ 
+ .gall-img-5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+ }
+ 
+ .gall-img-6{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 8;
+ }
+ 
+ .gall-img-7{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 8;
+ }
+ 
+ .gall-img-8{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 10;
+ }
+ 
+ .gall-img-9{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 8;
+    grid-row-end: 10;
+ }
+ 
+ .gall-img-10{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 10;
+    grid-row-end: 12;
+ }
+ 
+ .gall-img-11{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 12;
+ }
+
+.section-2-gallery:hover .gallery-imgs-1{
+   opacity: 1;
+}
+
+.section-3-gallery:hover .gallery-imgs-2{
+   opacity: 1;
+}
+
+
+/**********************************************
+IMAGE CAPTIONS
+**********************************************/
+
+.gall-img-1-text,
+.gall-img-2-text,
+.gall-img-3-text,
+.gall-img-4-text,
+.gall-img-5-text,
+.gall-img-6-text,
+.gall-img-7-text,
+.gall-img-8-text,
+.gall-img-9-text,
+.gall-img-10-text,
+.gall-img-11-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    transform: translateY(100%);
+    transition: all 0.7s;
+    border-radius: 0px 0 8px 8px;
+}
+
+.gall-img-1:hover .gall-img-1-text,
+.gall-img-2:hover .gall-img-2-text,
+.gall-img-3:hover .gall-img-3-text,
+.gall-img-4:hover .gall-img-4-text,
+.gall-img-5:hover .gall-img-5-text,
+.gall-img-6:hover .gall-img-6-text,
+.gall-img-7:hover .gall-img-7-text,
+.gall-img-8:hover .gall-img-8-text,
+.gall-img-9:hover .gall-img-9-text,
+.gall-img-10:hover .gall-img-10-text,
+.gall-img-11:hover .gall-img-11-text{
+    transform: translate(0);
+}
+
+.gall-img-1:hover img,
+.gall-img-2:hover img,
+.gall-img-3:hover img,
+.gall-img-4:hover img,
+.gall-img-5:hover img,
+.gall-img-6:hover img,
+.gall-img-7:hover img,
+.gall-img-8:hover img,
+.gall-img-9:hover img,
+.gall-img-10:hover img,
+.gall-img-11:hover img{
+    transform: scale(1.1);
+}
+
+.gall-img-1-text h3,
+.gall-img-2-text h3,
+.gall-img-3-text h3,
+.gall-img-4-text h3,
+.gall-img-5-text h3,
+.gall-img-6-text h3,
+.gall-img-7-text h3,
+.gall-img-8-text h3,
+.gall-img-9-text h3,
+.gall-img-10-text h3,
+.gall-img-11-text h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.gall-img-1-text p,
+.gall-img-2-text p,
+.gall-img-3-text p,
+.gall-img-4-text p,
+.gall-img-5-text p,
+.gall-img-6-text p,
+.gall-img-7-text p,
+.gall-img-8-text p,
+.gall-img-9-text p,
+.gall-img-10-text p,
+.gall-img-11-text p{
+    font-size: 1.6rem;
+    color: black;
+}
+
+/**********************************************
+END OF SECTION-3 AND SECTION 4 GALLERY
+**********************************************/

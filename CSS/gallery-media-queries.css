@@ -1,0 +1,818 @@
+/****************************************************
+*****************************************************
+FOR SMALL LAPTOPS OR LANDSCAPE ON IPADS (1300px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 1300px) {
+/***************************
+SECTION 2 AND 3
+***************************/
+
+.gallery-imgs-1, 
+.gallery-imgs-2 {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 20rem);
+}
+
+.gall-img-1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+ 
+.gall-img-2{
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gall-img-3{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+ 
+.gall-img-4{
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gall-img-5{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+ 
+.gall-img-6{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gall-img-7{
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+ 
+.gall-img-8{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.gall-img-9{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+ 
+.gall-img-10{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+ 
+.gall-img-11{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+/***************************
+ END OF SECTION 2 QUERIES
+***************************/
+     
+}
+        
+/***************************************************
+****************************************************
+END OF SMALL LAPTOPS OR LANDSCAPE ON IPADS SECTION
+(1300px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR SMALLER LAPTOPS OR LANDSCAPE ON IPADS (1000px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 1000px) {
+/***************************
+SECTION 2 AND 3
+***************************/
+
+/**************************** 
+CLICK FUNCIONALITY
+****************************/
+
+.toggle{
+    transform: translateY(100%);
+}
+
+.gall-img-1-text,
+.gall-img-2-text,
+.gall-img-3-text,
+.gall-img-4-text,
+.gall-img-5-text,
+.gall-img-6-text,
+.gall-img-7-text,
+.gall-img-8-text,
+.gall-img-9-text,
+.gall-img-10-text,
+.gall-img-11-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    transition: all 0.7s;
+    border-radius: 0px 0 8px 8px;
+}
+
+.gall-img-1::before,
+.gall-img-2::before,
+.gall-img-3::before,
+.gall-img-4::before,
+.gall-img-5::before,
+.gall-img-6::before,
+.gall-img-7::before,
+.gall-img-8::before,
+.gall-img-9::before,
+.gall-img-10::before,
+.gall-img-11::before{
+  content: "Hover over me";
+  opacity: var(--opacityStyle, 1);
+}
+
+/**************************** 
+END OF CLICK FUNCIONALITY
+****************************/
+    
+.gallery-imgs-1, 
+.gallery-imgs-2 {
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 25rem);
+}
+    
+.gall-img-1{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+     
+.gall-img-2{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    
+.gall-img-3{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+     
+.gall-img-4{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+    
+.gall-img-5{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+     
+.gall-img-6{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+    
+.gall-img-7{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+     
+.gall-img-8{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+    
+.gall-img-9{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+     
+.gall-img-10{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+     
+.gall-img-11{
+    grid-column-start: 6;
+    grid-column-end: 20;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+    
+/***************************
+END OF SECTION 2 QUERIES
+***************************/
+         
+}
+            
+/***************************************************
+****************************************************
+FOR SMALLER LAPTOPS OR LANDSCAPE ON IPADS (1000px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR IPADS, TABLETS AND LANDSCAPE VIEW (850px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 850px) {
+
+/***************************
+SECTION 1
+***************************/
+
+.hero-gallery-text h1 {
+    font-size: 7rem;
+}
+                
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+
+
+
+
+
+/***************************
+SECTION 2 AND 3
+***************************/
+        
+.gallery-imgs-1, 
+.gallery-imgs-2 {
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 25rem);
+}
+        
+.gall-img-1{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+         
+.gall-img-2{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+        
+.gall-img-3{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+         
+.gall-img-4{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+        
+.gall-img-5{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+         
+.gall-img-6{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+        
+.gall-img-7{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+         
+.gall-img-8{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+        
+.gall-img-9{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+         
+.gall-img-10{
+    grid-column-start: 13;
+    grid-column-end: 25;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+         
+.gall-img-11{
+    grid-column-start: 6;
+    grid-column-end: 20;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+.gall-img-1::before,
+.gall-img-2::before,
+.gall-img-3::before,
+.gall-img-4::before,
+.gall-img-5::before,
+.gall-img-6::before,
+.gall-img-7::before,
+.gall-img-8::before,
+.gall-img-9::before,
+.gall-img-10::before,
+.gall-img-11::before{
+  content: "Tap on me";
+}
+        
+/***************************
+END OF SECTION 2 QUERIES
+***************************/
+             
+}
+                
+/***************************************************
+****************************************************
+END OF IPADS, TABLETS AND LANDSCAPE VIEW (850px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR IPADS, TABLETS AND LANDSCAPE VIEW (650px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 650px) {
+
+/***************************
+SECTION 1
+***************************/
+    
+.hero-gallery-text h1 {
+    font-size: 5rem;
+}
+
+.hero-gallery-text p {
+    font-size: 2.4rem;
+}
+
+.gallery-scroll-down {
+    display: none;
+}
+                    
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+    
+    
+    
+    
+    
+/***************************
+SECTION 2 AND 3
+***************************/
+            
+.gallery-imgs-1, 
+.gallery-imgs-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(22, 25rem);
+    row-gap: 8rem;
+}
+                
+.gall-img-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+                 
+.gall-img-2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+                
+.gall-img-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+                 
+.gall-img-4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+                
+.gall-img-5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+                 
+.gall-img-6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+                
+.gall-img-7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+                 
+.gall-img-8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 15;
+    grid-row-end: 17;
+}
+                
+.gall-img-9{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 17;
+    grid-row-end: 19;
+}
+                 
+.gall-img-10{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 19;
+    grid-row-end: 21;
+}
+                 
+.gall-img-11{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 21;
+    grid-row-end: 23;
+}
+            
+/***************************
+END OF SECTION 2 QUERIES
+***************************/
+                 
+}
+                    
+/***************************************************
+****************************************************
+END OF FOR IPADS, TABLETS AND LANDSCAPE VIEW (650px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR IPADS, TABLETS AND LANDSCAPE VIEW (500px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 500px) {
+
+/***************************
+SECTION 1
+***************************/
+        
+.hero-gallery-text h1 {
+    font-size: 4.5rem;
+}
+    
+.hero-gallery-text p {
+    font-size: 2.3rem;
+}
+                        
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+
+
+
+
+
+/***************************
+SECTION 2
+***************************/
+        
+.gallery-imgs-1, .gallery-imgs-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(22, 26rem);
+}
+                        
+/***************************
+END OF SECTION 2 QUERIES
+***************************/
+                     
+}
+                        
+/***************************************************
+****************************************************
+END OF IPADS, TABLETS AND LANDSCAPE VIEW (500px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR TABLETS AND BIG PHONES (450px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 450px) {
+
+/***************************
+SECTION 1
+***************************/
+            
+.hero-gallery-text h1 {
+    font-size: 4.2rem;
+}
+        
+.hero-gallery-text p {
+    font-size: 2.1rem;
+}
+                            
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+                         
+}
+                            
+/***************************************************
+****************************************************
+END OF TABLETS AND BIG PHONES (450px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR BIG TO MEDIUM PHONE QUERIES (400px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 400px) {
+
+/***************************
+SECTION 1
+***************************/
+                
+.hero-gallery-text h1 {
+    font-size: 4rem;
+}
+            
+.hero-gallery-text p {
+    font-size: 2rem;
+}
+                                
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+                             
+}
+                                
+/***************************************************
+****************************************************
+END OF BIG TO MEDIUM PHONE QUERIES (400px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR MEDIUM TO SMALL PHONES (350px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 350px) {
+
+/***************************
+SECTION 1
+***************************/
+                    
+.hero-gallery-text h1 {
+    font-size: 3.4rem;
+}
+                
+.hero-gallery-text p {
+    font-size: 2rem;
+}
+                                    
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+                                 
+}
+                                    
+/***************************************************
+****************************************************
+FOR MEDIUM TO SMALL PHONES (350px)
+****************************************************
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************
+*****************************************************
+FOR SMALL PHONES AND FOLD PHONES (300px)
+*****************************************************
+****************************************************/
+
+@media (max-width: 350px) {
+
+/***************************
+SECTION 1
+***************************/
+                        
+.hero-gallery-text h1 {
+    font-size: 3.1rem;
+}
+                    
+.hero-gallery-text p {
+    font-size: 2rem;
+}
+                                        
+/***************************
+END OF SECTION 1 QUERIES
+***************************/
+                                     
+}
+                                        
+/***************************************************
+****************************************************
+END OF SMALL PHONES AND FOLD PHONES (300px)
+****************************************************
+***************************************************/

@@ -1,0 +1,530 @@
+/**************************************** 
+About Section 1 - Hero Section
+****************************************/
+
+.oursat-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("../IMG/Our-sat/out-sat-hero-Re.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+}
+
+.oursat-hero-text{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.oursat-hero-text h1{
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.oursat-hero-text p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.oursat-scroll-down{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    transition-delay: all 0s;
+    opacity: 1;
+}
+
+.oursat-hero-text h5{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+   
+.oursat-hero:hover .oursat-scroll-down{
+    opacity: 1;
+    transition-delay: 2s; 
+}
+
+/**************************************** 
+End of About Section 1 - Hero Section
+****************************************/
+
+
+
+
+
+/**************************************** 
+EXTRA INTRO-IMG SECTION - OUR-SAT
+****************************************/
+
+.our-sat-extra{
+    background: linear-gradient(rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0.8)) 80%, url(../IMG/Our-sat/sat-intro-Re.jpg);
+    height: 100vh;
+    background-size: 1550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+}
+
+.extra-img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.our-sat-extra:hover .extra-img-text{
+    opacity: 1;
+}
+
+.extra-img-btns{
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.our-sat-extra:hover .extra-img-btns{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.extra-img-btn-1 a,
+.extra-img-btn-2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.extra-img-btn-1 a:hover,
+.extra-img-btn-2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+.extra-img-btn-1 a:hover .rocket,
+.extra-img-btn-2 a:hover .rocket{
+    animation: MoveUpDown 0.5s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+/**************************************** 
+End of INTR0-IMG-SECTION - OUR-SAT
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 2 - Oursat-voyager
+****************************************/
+
+.section-2-oursat{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 18.5rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.oursat-voyager h5{
+    text-align: left;
+}
+
+.oursat-voyager-img{
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.section-2-oursat:hover .oursat-voyager-img{
+    opacity: 1;
+}
+
+.nebula-disapear{
+    width: 85%;
+    border-radius: 10px;
+}
+
+.oursat-voyager-img-trans{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.oursat-voyager-img-trans img{
+    width: 42%;
+    animation: rotate-slowly 5s linear infinite alternate;
+}
+
+.oursat-voyager-text{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.section-2-oursat:hover .oursat-voyager-text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.oursat-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 295px;
+    margin-top: 2.5rem;
+}
+
+.oursat-links a:hover{
+    background-color: white;
+    color: black;
+}
+
+.oursat-links a:hover .rocket{
+    animation: MoveUpDown 0.5s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+
+
+/********************************
+Oursat Voyager Details Section 
+********************************/
+
+.overall-div-voyager-details{
+    padding-top: 12rem;
+    padding-bottom: 8.5rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.oursat-voyager-details{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 7rem;
+    column-gap: 5rem;
+}
+
+.detail-img{
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+}
+
+.detail-img span{
+    font-size: 5.6rem;
+    color: white;
+}
+
+.detail-1 h3,
+.detail-2 h3,
+.detail-3 h3,
+.detail-4 h3,
+.detail-5 h3,
+.detail-6 h3,
+.detail-7 h3,
+.detail-8 h3{
+    font-size: 2.1rem;
+}
+
+.detail-1 p,
+.detail-2 p,
+.detail-3 p,
+.detail-4 p,
+.detail-5 p,
+.detail-6 p,
+.detail-7 p,
+.detail-8 p{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.detail-1,
+.detail-2,
+.detail-3,
+.detail-4,
+.detail-5,
+.detail-6,
+.detail-7,
+.detail-8{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.73), rgba(0,0,0,0.73)), url("../IMG/Our-sat/Numbers-Re.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.detail-1:hover,
+.detail-2:hover,
+.detail-3:hover,
+.detail-4:hover,
+.detail-5:hover,
+.detail-6:hover,
+.detail-7:hover,
+.detail-8:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgb(255, 255, 255) 40%), url("../IMG/Our-sat/Numbers-Re.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.detail-1:hover .detail-img span,
+.detail-2:hover .detail-img span,
+.detail-3:hover .detail-img span,
+.detail-4:hover .detail-img span,
+.detail-5:hover .detail-img span,
+.detail-6:hover .detail-img span,
+.detail-7:hover .detail-img span,
+.detail-8:hover .detail-img span{
+    color: black;
+}
+
+.section-2-oursat:hover .overall-div-voyager-details{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+/**************************************** 
+End of About Section 2 - Oursat-voyager
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 3 - Exxion MCRN 1
+****************************************/
+
+.section-3-oursat{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.MCRN-1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.nebula-disapear{
+    width: 85%;
+    border-radius: 10px;
+}
+
+.MCRN-1-text{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.MCRN-1-img-trans{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.MCRN-1-img-trans img{
+    width: 42%;
+    animation: rotate-slowly 5s linear infinite alternate;
+}
+
+.section-3-oursat:hover .MCRN-1-img{
+    opacity: 1;
+}
+
+.section-3-oursat:hover .MCRN-1-text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+/********************************
+MCRN-1 Details Section 
+********************************/
+
+.overall-MCRN-1-details{
+    padding-top: 12rem;
+    padding-bottom: 8.5rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.MCRN-1-details{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 7rem;
+    column-gap: 5rem;
+}
+
+.section-3-oursat:hover .overall-MCRN-1-details{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+/**************************************** 
+End of About Section 3 - Exxion MCRN 1
+****************************************/
+
+
+
+
+
+
+/**************************************** 
+About Section 4 - End Background
+****************************************/
+
+.section-4-oursat{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.end-background{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.65) 55%), url("../IMG/Our-sat/end-background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end-background-text{
+    width: 70%;
+    text-align: center;
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.end-background-text-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 2.5rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.end-btn-1 a,
+.end-btn-2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.end-btn-1 a:hover,
+.end-btn-2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+.end-btn-1 a:hover .rocket,
+.end-btn-2 a:hover .rocket{
+    animation: MoveUpDown 0.5s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.section-4-oursat:hover .end-background-text{
+    opacity: 1;
+}
+
+.section-4-oursat:hover .end-background-text-btns{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+/**************************************** 
+End of About Section 4 - End Background
+****************************************/

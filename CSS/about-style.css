@@ -1,0 +1,570 @@
+/**************************************** 
+About Section 1 - Hero Section
+****************************************/
+
+.about-hero-bg{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.85)),url("../IMG/About-img/front-2-Re.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-hero{
+    color: white;
+    font-family: sans-serif;
+}
+   
+.about-hero h1{
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.about-hero p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-hero-btn{
+    display: flex;
+    gap: 3rem;
+}
+
+.about-hero a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.about-hero a:hover{
+    background-color: white;
+    color: black;
+}
+
+.about-scroll-down{
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    transition-delay: all 0s;
+    opacity: 1;
+}
+   
+.hero-arrow-down{
+    width: 2rem;
+}
+   
+.about-scroll-down h5{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+   
+.about-hero:hover .about-scroll-down{
+    opacity: 1;
+    transition-delay: 2s; 
+}
+
+/**************************************** 
+End of About Section 1 - Hero Section
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 2 - Who are we?
+****************************************/
+
+.section-2-about{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.founders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.who-are-we h5{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.who-are-we h2{
+    margin-bottom: 10rem;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.founder-1,
+.founder-2,
+.founder-3,
+.founder-4{
+    width: 20%;
+    background-color: white;
+    border-radius: 20px 20px 10px 10px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+
+.founder-img{
+    position: relative;
+}
+
+.founder-img-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.js-disappear,
+.js-disappear-2,
+.js-disappear-3,
+.js-disappear-4{
+    opacity: 0;
+}
+
+.founder-svg{
+    color: black;
+    width: 12.5%;
+    margin-bottom: 1rem;
+}
+
+.founder-career{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.founder-career{
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.founder-desc{
+    color: black;
+    font-size: 1.6rem;
+    width: 89%;
+}
+
+.founder-1:hover .js-disappear,
+.founder-2:hover .js-disappear-2,
+.founder-3:hover .js-disappear-3,
+.founder-4:hover .js-disappear-4{
+    opacity: 1;
+}
+
+.founder-1 img,
+.founder-2 img,
+.founder-3 img,
+.founder-4 img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.founder-name{
+    font-size: 2rem;
+    margin-top: 0.6rem;
+    color: black;
+    font-weight: 600;
+}
+
+.founder-position{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.founder-img::before{
+    content: 'Hover over me';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5.5%;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    animation: scaling 3s linear infinite;
+    transition: all 1.5s;
+    opacity: 1;
+}
+
+@keyframes scaling {
+    0% {transform: scale(1);}
+
+    50% {transform: scale(1.08);}
+
+    100% {transform: scale(1);}
+}
+
+.section-2-about:hover .founder-img::before{
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+.section-2-about:hover .who-are-we h5,
+.section-2-about:hover .who-are-we h2{
+    opacity: 1;
+}
+
+.section-2-about:hover .founder-1,
+.section-2-about:hover .founder-2,
+.section-2-about:hover .founder-3,
+.section-2-about:hover .founder-4{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/**************************************** 
+About Section 2 - Who are we?
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 3 - The start of Exxion
+****************************************/
+
+.section-3-about{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.about-how-why-img{
+   display: flex;
+   justify-content: center;
+   transition: 0.5s;
+   opacity: 1;
+}
+
+.about-how-why-img img{
+    width: 83%;
+    border-radius: 10px;
+}
+
+.about-how-why-text{
+    width: 90%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.section-3-about:hover .about-how-why-img{
+    opacity: 1;
+}
+
+.section-3-about:hover .about-how-why-text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+/**************************************** 
+About Section 3 - The start of Exxion
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 4 - What we stand for
+****************************************/
+
+.section-4-about{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.head-section-about-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head-section-about-4 h5{
+    transition: 0.7s;
+    opacity: 1;
+}
+
+.head-section-about-4 h2{
+    margin-bottom: 10rem;
+    transition: 0.7s;
+    opacity: 1;
+}
+
+.section-4-about:hover .head-section-about-4 h5,
+.section-4-about:hover .head-section-about-4 h2{
+    opacity: 1;
+}
+
+.what-we-stand-for{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.section-4-about:hover .what-we-stand-for{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.stand-for-1,
+.stand-for-2,
+.stand-for-3,
+.stand-for-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 485px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stand-for-1::before,
+.stand-for-2::before,
+.stand-for-3::before,
+.stand-for-4::before{
+    content: 'Innovation';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.2%;
+    height: 100%;
+    background: var(--turnOff, url(../IMG/About-img/Stand-for-1-Re.jpg));
+    background-size: cover;
+    background-position: center;
+    font-size: 2.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.stand-for-2::before{
+    content: 'Community';
+    background: url("../IMG/About-img/Stand-for-2-Re.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.stand-for-3::before{
+    content: 'Logic';
+    background: url("../IMG/About-img/Stand-for-3-Re.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.stand-for-4::before{
+    content: 'Creativity';
+    background: url("../IMG/About-img/Stand-for-4-Re.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.suppose-hover:hover::before,
+.suppose-hover-2:hover::before,
+.suppose-hover-3:hover::before,
+.suppose-hover-4:hover::before{
+    opacity: 0;
+}
+
+.stand-for-1::after,
+.stand-for-2::after,
+.stand-for-3::after,
+.stand-for-4::after{
+    content: 'Hover over me';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5.5%;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    animation: scaling 3s linear infinite;
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+.section-4-about:hover .stand-for-1::after,
+.section-4-about:hover .stand-for-2::after,
+.section-4-about:hover .stand-for-3::after,
+.section-4-about:hover .stand-for-4::after{
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+.what-we-stand-for p,
+.what-we-stand-for h3{
+    color: black;
+}
+
+.what-we-stand-for h3{
+    font-size: 2rem;
+    margin-top: 1.2rem;
+}
+
+.what-we-stand-for p{
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+}
+
+.stand-for-svg{
+    background-color: black;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.what-we-stand-for svg{
+    width: 40px;
+    color: white;
+}
+
+/**************************************** 
+About Section 4 - What we stand for
+****************************************/
+
+
+
+
+
+/**************************************** 
+About Section 5 - Sky
+****************************************/
+
+.section-5-about{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 10rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.about-sky{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG//About-img/back-Re.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-sky-text{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.about-sky-links{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2.8rem;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.about-sky-text a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 175px;
+}
+
+.about-sky-links a:hover{
+    background-color: white;
+    color: black;
+}
+
+.about-sky-links a:hover .rocket{
+    animation: MoveUpDown 0.5s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.section-5-about:hover .about-sky-text{
+    opacity: 1;
+}
+
+.section-5-about:hover .about-sky-links{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+/**************************************** 
+About Section 5 - The start of Exxion
+****************************************/

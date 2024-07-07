@@ -1,0 +1,1323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+html{
+/* font-size: 10px; */
+/* 10px / 16px = 0.625 = 62.5% */
+/* Percentage of users browser font-size setting */
+font-size: 62.5%;
+overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+   
+/***********************
+Scrollbar Editing
+************************/
+   
+::-webkit-scrollbar {
+       width: 0px;
+  }
+    
+/***********************
+Scrollbar Editing ends
+************************/
+   
+   
+   
+   
+   
+/**********************************************
+GENERAL STYLES/REUSABLE STYLES
+**********************************************/
+   
+.grid-2-cols{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.satellite-text h5,
+.building-text h5,
+.sat-closer-look h5,
+.company-reviews h5,
+.review-1-text h5,
+.review-2-text h5,
+.review-3-text h5,
+.review-4-text h5,
+.review-5-text h5,
+.review-6-text h5,
+.review-7-text h5,
+.who-are-we h5,
+.join-us h5,
+.about-how-why-text h5,
+.head-section-about-4 h5,
+.oursat-voyager h5,
+.MCRN-1-text h5,
+.end-background-text h5,
+.voyager-images h5,
+.just-contact-heading h5,
+.extra-img-text h5,
+.contact-front-bg-text h5{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.satellite-text h2,
+.building-text h2,
+.sat-closer-look h2,
+.company-reviews h2,
+.join-us h2,
+.who-are-we h2,
+.about-how-why-text h2,
+.head-section-about-4 h2,
+.oursat-voyager h2,
+.MCRN-1-text h2,
+.end-background-text h2,
+.voyager-images h2,
+.just-contact-heading h2,
+.extra-img-text h2,
+.about-sky-text h2,
+.contact-front-bg-text h2{
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+}
+   
+.satellite-text p,
+.building-text p,
+.closer-sat-1 p,
+.closer-sat-2 p,
+.review-1-text p,
+.review-2-text p,
+.review-3-text p,
+.review-4-text p,
+.review-5-text p,
+.review-6-text p,
+.review-7-text p,
+.join-us p,
+.about-how-why-text p,
+.oursat-voyager-text p,
+.MCRN-1-text p,
+.end-background-text p,
+.extra-img-text p,
+.about-sky-text p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.mini-icons{
+    color: white;
+    width: 2.2rem;
+    margin-left: 0.8rem;
+    margin-bottom: -5px;
+}
+   
+/**********************************************
+END OF GENERAL STYLES/REUSABLE STYLES
+**********************************************/
+   
+   
+   
+   
+   
+/**********************************************
+HEADER / NAV SECTION
+**********************************************/
+   
+.main-video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) -0.5%, rgba(0,0,0,0.0) 50%);
+    z-index: -1;
+}
+   
+.main-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    filter: brightness(100%);
+    z-index: -1;
+    }
+   
+.nav-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    position: absolute;
+}
+
+.mobile-nav{
+    display: none;
+}
+   
+.nav-img{
+    text-align: center;
+}
+   
+.nav-img img{
+    width: 35%;
+    height: auto;
+}
+   
+.left-nav ul,
+.right-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 3rem;
+}
+   
+.left-nav ul a,
+.right-nav ul a{
+    font-size: 2.4rem;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+   
+.left-nav ul li,
+.right-nav ul li{
+    position: relative;
+    overflow: hidden;
+}
+   
+.left-nav ul a::before,
+.right-nav ul a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: translateX(-102%);
+    transition: all 0.5s;
+}
+   
+.left-nav ul a::after,
+.right-nav ul a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: translateX(102%);
+    transition: all 0.5s;
+}
+   
+.left-nav ul li::before,
+.right-nav ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    transform: translateY(102%);
+    transition: all 0.5s;
+}
+   
+.left-nav ul li::after,
+.right-nav ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    transform: translateY(-102%);
+    transition: all 0.5s;
+}
+   
+.left-nav ul a:hover::before,
+.left-nav ul a:hover::after,
+.right-nav ul a:hover::before,
+.right-nav ul a:hover::after,
+.right-nav ul li:hover::before,
+.right-nav ul li:hover::after,
+.left-nav ul li:hover::before,
+.left-nav ul li:hover::after{
+    transform: translate(0);
+}
+   
+.right-nav ul a:hover,
+.left-nav ul a:hover{
+    background-color: white;
+    color: black;
+    transition-delay: 0.5s;
+}
+   
+.right-nav button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menu{
+    display: none;
+}
+   
+/**********************************************
+END OF HEADER / NAV SECTION
+**********************************************/
+   
+   
+   
+   
+   
+/**********************************************
+SECTION 1 - HERO SECTION
+**********************************************/
+   
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+   
+.hero-section h1{
+    font-size: 8rem;
+    margin-top: 44rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+   
+.hero-section p{
+    font-size: 3rem;
+    margin-bottom: 3.3rem;
+}
+   
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+   
+.hero-section a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+   
+.hero-section a:hover{
+    background-color: white;
+    color: black;
+}
+   
+.rocket{
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+   
+.earth{
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+   
+.scroll-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    transition-delay: all 0s;
+    opacity: 1;
+}
+   
+.hero-arrow-down{
+    width: 2rem;
+}
+   
+.scroll-down h5{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+   
+.hero-section:hover .scroll-down{
+    opacity: 1;
+    transition-delay: 8s;
+}
+   
+/********************************************** 
+HERO ANIMATIONS
+**********************************************/
+   
+.hero-arrow-down{
+    animation: MoveUpDown 1s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    }
+     
+    @keyframes MoveUpDown {
+    0%, 100% {
+    bottom: 0;
+    }
+    50% {
+    bottom: 5px;
+    }
+}
+   
+.hero-btn-1:hover .rocket{
+    animation: MoveUpDown 0.5s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+     
+@keyframes MoveUpDown {
+    0%, 100% {
+    bottom: 0;
+    }
+    50% {
+    bottom: 3px;
+    }
+}
+   
+.hero-btn-2:hover .earth{
+    animation: RotateAround 3.2s linear infinite;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+     
+@keyframes RotateAround {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+}
+   
+/********************************************** 
+END OF HERO ANIMATIONS
+**********************************************/
+   
+/**********************************************
+END OF SECTION-1 OF HEADER / NAV SECTION
+**********************************************/
+   
+   
+   
+   
+   
+   
+/**********************************************
+SECTION 2 - OUR NEW DEEP SPACE TECH
+**********************************************/
+   
+.section-2{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 17rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+   
+.our-technology{
+    justify-content: center;
+    align-items: center;
+}
+   
+.satellite-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    opacity: 1;
+}
+   
+.satellite-text{
+    width: 90%;
+    transition: all 0.7s;
+    opacity: 1;
+}
+   
+.satellite-img img{
+    width: 67%;
+    border-radius: 10px;
+}
+   
+.section-2:hover .satellite-img{
+    opacity: 1;
+}
+   
+.section-2:hover .satellite-text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+   
+/**********************************************
+   END OF SECTION 2 - OUR NEW DEEP SPACE TECH
+**********************************************/
+   
+   
+   
+   
+   
+/**********************************************
+SECTION 3 - 
+**********************************************/
+
+.section-3{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.Voyager-section{
+    height: 120vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../IMG/stars-2.jpg');
+	background-position: center;
+	animation: floating 45s linear infinite;
+    position: relative;
+    background-size: cover;
+    transition: all 0.7s;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voyager-sat-trans{
+    position: absolute;
+    width: 26rem;
+    top: 120px;
+    left: 30px;
+    transform: rotate(-20deg);
+}
+
+.deep-satelite-sat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.deep-satelite-sat h5{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.deep-satelite-sat h2{
+    z-index: 999;
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.deep-satelite-sat p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    z-index: 2;
+}
+
+.Voyager-section a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.section-3:hover .Voyager-section{
+    opacity: 1;
+}
+
+.Voyager-section a:hover{
+    background-color: white;
+    color: black;
+}
+
+/********************************************** 
+PLANETS AND METEORITE BACKGROUND SECTION
+**********************************************/
+
+.planets,
+.meteorite{
+    position: absolute;
+    width: 280px;
+}
+
+.jupiter{
+    bottom: 60px;
+    left: 90px;
+    width: 195px;
+    animation: rotating-planets-2 100s linear infinite;
+}
+
+.mother-earth{
+    top: 75px;
+    right: 120px;
+    width: 175px;
+    transform: rotate(-20deg);
+    animation: rotating-planets-2 85s linear infinite;
+}
+
+.mars{
+    bottom: 70px;
+    right: 220px;
+    width: 150px;
+    animation: rotating-planets 65s linear infinite;
+}
+
+.neptune{
+    width: 140px;
+    left: 340px;
+    top: 55px;
+    animation: rotating-planets 60s linear infinite;
+}
+
+.met-1{
+    width: 90px;
+    top: 50px;
+    right: 600px;
+    z-index: 1;
+    animation: moving-met-2 45s linear infinite;
+}
+
+.met-2{
+    width: 90px;
+    bottom: 420px;
+    animation: moving-met-1 30s linear infinite;
+    z-index: 1;
+}
+
+.met-3{
+    width: 90px;
+    top: 650px;
+    z-index: 1;
+    animation: moving-met-3 50s linear infinite;
+}
+
+@keyframes rotating-planets {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(350deg);}
+}
+
+@keyframes rotating-planets-2 {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(-350deg);}
+}
+
+@keyframes moving-met-1 {
+    from {left: -10%;
+    transform: rotate(0deg);}
+
+    to {left: 110%;
+    transform: rotate(350deg);}
+}
+
+@keyframes moving-met-2 {
+    from {left: -25%;
+    transform: rotate(0deg);}
+
+    to {left: 110%;
+    transform: rotate(350deg);}
+}
+
+@keyframes moving-met-3 {
+    from {left: -30%;
+    transform: rotate(0deg);}
+
+    to {left: 110%;
+    transform: rotate(350deg);}
+}
+
+/********************************************** 
+END OF PLANETS AND METEORITE BACKGROUND SECTION
+**********************************************/
+
+
+/********************************************** 
+SATELLITE-SECTION ANIMARIONS
+**********************************************/
+
+@keyframes floating{
+	0%{background-position: bottom left;}
+
+	100%{background-position: bottom right;}
+}
+
+/********************************************** 
+END OF SATELLITE-SECTION ANIMARIONS
+**********************************************/
+
+/**********************************************
+END OF SECTION 3 - 
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 4 - BUILDING THE SATELLITES
+**********************************************/
+   
+.section-4{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.building-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+.building-img img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.building-text{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s;
+    width: 90%;
+    opacity: 1;
+}
+
+.section-4:hover .building-img{
+    opacity: 1;
+}
+
+.section-4:hover .building-text{
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+
+   
+/**********************************************
+END OF SECTION 4 - BUILDING THE SATELLITES
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 5 - CLOSER LOOK
+**********************************************/
+   
+.section-5{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 8.5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.closer-look-box{
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-space{
+    height: 100%;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.sat-closer-look h5{
+    text-align: center;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.sat-closer-look h2{
+    text-align: center;
+    margin-bottom: 10rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-look-box img{
+    width: 60%;
+    animation: rotate-slowly 3s linear infinite;
+    animation-direction: alternate;
+}
+
+.closer-sat-1-img{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../IMG/Jupiter.jpg');
+    background-size: 950px;
+    background-position: center;
+    animation: floating 40s linear infinite;
+    animation-direction: alternate;
+    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-2-img{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../IMG/pluto.jpg');
+    background-size: 800px;
+    animation: floating 40s linear infinite;
+    animation-direction: alternate;
+    border-radius: 10px;
+    height: 350px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-1,
+.closer-sat-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 72%;
+    margin: auto;
+}
+
+.closer-sat-1 h3,
+.closer-sat-2 h3{
+    font-size: 3.4rem;
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-1 h4,
+.closer-sat-2 h4{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-1 p,
+.closer-sat-2 p{
+    text-align: center;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-1 ul li,
+.closer-sat-2 ul li{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    list-style-type: none;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.closer-sat-1 ul li:nth-child(1),
+.closer-sat-2 ul li:nth-child(1){
+    margin-top: 2.5rem;
+}
+
+.section-5-learn-links{
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+.closer-sat-1 a,
+.closer-sat-2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-top: 2.5rem;
+}
+
+.closer-sat-1 a:hover,
+.closer-sat-2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+@keyframes rotate-slowly {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(-5deg);}
+}
+
+.section-5:hover .sat-closer-look h2,
+.section-5:hover .sat-closer-look h5{
+    opacity: 1;
+}
+
+.section-5:hover .closer-sat-1-img,
+.section-5:hover .closer-sat-2-img,
+.section-5:hover .empty-space{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.section-5:hover .closer-sat-1 h3,
+.section-5:hover .closer-sat-2 h3,
+.section-5:hover .closer-sat-1 h4,
+.section-5:hover .closer-sat-2 h4,
+.section-5:hover .closer-sat-1 p,
+.section-5:hover .closer-sat-2 p{
+    opacity: 1;
+    transition-delay: 0.6s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(1),
+.section-5:hover .closer-sat-2 ul li:nth-child(1){
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(2),
+.section-5:hover .closer-sat-2 ul li:nth-child(2){
+    opacity: 1;
+    transition-delay: 1.2s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(3),
+.section-5:hover .closer-sat-2 ul li:nth-child(3){
+    opacity: 1;
+    transition-delay: 1.4s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(4),
+.section-5:hover .closer-sat-2 ul li:nth-child(4){
+    opacity: 1;
+    transition-delay: 1.6s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(5),
+.section-5:hover .closer-sat-2 ul li:nth-child(5){
+    opacity: 1;
+    transition-delay: 1.8s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(6),
+.section-5:hover .closer-sat-2 ul li:nth-child(6){
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(7),
+.section-5:hover .closer-sat-2 ul li:nth-child(7){
+    opacity: 1;
+    transition-delay: 2.2s;
+}
+
+.section-5:hover .closer-sat-1 ul li:nth-child(8),
+.section-5:hover .closer-sat-2 ul li:nth-child(8){
+    opacity: 1;
+    transition-delay: 2.4s;
+}
+
+.section-5:hover .section-5-learn-links,
+.section-5:hover .section-5-learn-links{
+    opacity: 1;
+    transition-delay: 3s;
+}
+   
+/**********************************************
+END OF SECTION 5 - CLOSER LOOK
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 6 - REVIEWS
+**********************************************/
+   
+.section-6{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('../IMG/Sqooushed/Stars-resized.webp');
+    background-size: 750px;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.company-reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company-reviews h2{
+    text-align: center;
+    margin-bottom: 10rem;
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+.review-h5{
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.review-1,
+.review-2,
+.review-3,
+.review-4,
+.review-5,
+.review-6,
+.review-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid white;
+    transition: all 0.5s;
+    padding: 8rem 0;
+    width: 85%;
+    gap: 4.5rem;
+    opacity: 1;
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+}
+
+.review-1:hover,
+.review-2:hover,
+.review-3:hover,
+.review-4:hover,
+.review-5:hover,
+.review-6:hover,
+.review-7:hover{
+    border-bottom: 3px solid white;
+    background-color: white;
+    transform: scale(1.06);
+    border-radius: 10px;
+    color: black;
+}
+
+.review-1-img,
+.review-2-img,
+.review-3-img,
+.review-4-img,
+.review-5-img,
+.review-6-img,
+.review-7-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    border: 5px solid black;
+}
+
+.review-4-img img,
+.review-5-img img,
+.review-6-img img{
+    width: 200px;
+    padding: 1rem;
+}
+
+.little-bigger img{
+    width: 200px;
+}
+
+.bit-bigger img{
+    width: 240px;
+}
+
+.little-smaller img{
+    width: 155px;
+}
+
+.review-1-text,
+.review-2-text,
+.review-3-text,
+.review-4-text,
+.review-5-text,
+.review-6-text,
+.review-7-text{
+    width: 75%;
+}
+
+.review-1-text p,
+.review-2-text p,
+.review-3-text p,
+.review-4-text p,
+.review-5-text p,
+.review-6-text p,
+.review-7-text p{
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+
+.review-1-text h5,
+.review-2-text h5,
+.review-3-text h5,
+.review-4-text h5,
+.review-5-text h5,
+.review-6-text h5,
+.review-7-text h5{
+    margin-top: 1.5rem;
+}
+
+.section-6:hover .company-reviews h2,
+.section-6:hover .review-h5{
+    opacity: 1;
+}
+
+.section-6:hover .review-1,
+.section-6:hover .review-2,
+.section-6:hover .review-3,
+.section-6:hover .review-4,
+.section-6:hover .review-5,
+.section-6:hover .review-6,
+.section-6:hover .review-7{
+    opacity: 1;
+}
+   
+/**********************************************
+END OF SECTION 6 - REVIEWS
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 7 - Banner
+**********************************************/
+   
+.section-7{
+    padding-top: 15rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.join-us{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) -10%, rgba(0,0,0,0.65) 55%), url('../IMG/nasa2-Re.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.join-us-text{
+    width: 70%;
+    transition: all 0.8s;
+    opacity: 1;
+}
+
+.join-us-buttons{
+    display: flex;
+    flex-direction: row;
+    transition: all 0.8s;
+    gap: 4rem;
+    opacity: 1;
+}
+
+.join-us-buttons a, .join-us-buttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: 3px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-top: 2.5rem;
+}
+
+.hero-btn:hover a{
+    background-color: white;
+    color: black;
+}
+
+.section-7:hover .join-us-text{
+    opacity: 1;
+}
+
+.section-7:hover .join-us-buttons{
+    opacity: 1;
+    transition-delay: 1s;
+}
+   
+/**********************************************
+END OF SECTION 7 - Banner
+**********************************************/
+
+
+
+
+
+/**********************************************
+SECTION 8 - Footer Section
+**********************************************/
+   
+.section-8{
+    padding-top: 0rem;
+    padding-bottom: 1.8rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23rem;
+    height: 430px;
+}
+
+.footer-texts{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.footer-text-services h5{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.7rem;
+}
+
+.footer-text-services ul li{
+    list-style-type: none;
+    margin-bottom: 1.8rem;
+}
+
+.footer-logo p{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.span-1{
+    font-style: italic;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+.shorten-p{
+ width: 400px;
+ margin-left: 5rem;
+}
+
+
+.footer-text-services a{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.footer-text-services a:hover{
+    color: grey;
+}
+
+.footer-copyright{
+    font-size: 1.6rem;
+    margin-top: 1.8rem;
+    color: rgb(217, 217, 217);
+    text-align: center;
+}
+   
+/**********************************************
+END OF SECTION 8 - Footer Section
+**********************************************/
